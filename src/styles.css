@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+.nutras-naranja{
+    color: #F86C00;
+}
+.background-nutras-naranja{
+    background-color: #F86C00;
+}
+
+.nav-link.active{color:#F86C00}

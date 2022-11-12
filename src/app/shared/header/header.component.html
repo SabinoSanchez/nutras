@@ -3,21 +3,17 @@
   
     <!-- Navbar -->
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-    <div class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-fixed-element>
+    <div class="navbar navbar-expand-lg navbar-light bg-light nutras-naranja navbar-sticky" data-fixed-element>
       <div class="container px-0 px-xl-3">
-        <a href="index.html" class="navbar-brand order-lg-1 mr-0 pr-lg-3 mr-lg-4">
-          <img src="assets/img/ecommerce/logo.svg" alt="Createx Logo" width="130">
+        <a routerLink="inicio" class="navbar-brand order-lg-1 mr-0 pr-lg-3 mr-lg-4">
+          <img src="assets/img/ecommerce/nutrastechnology.png" alt="Nutras Logo" width="130">
         </a>
-        <!-- Search desktop -->
-        <div class="input-group-overlay ml-4 d-lg-block d-none order-lg-3" style="max-width: 21rem;">
-          <input class="form-control appended-form-control" type="text" placeholder="Search for products...">
-          <div class="input-group-append-overlay">
-            <span class="input-group-text"><i class="cxi-search lead align-middle"></i></span>
-          </div>
-        </div>
+        
         <!-- Toolbar -->
+        <!---->
         <div class="d-flex align-items-center order-lg-3">
           <ul class="nav nav-tools flex-nowrap">
+            <!--
             <li class="nav-item d-lg-block d-none mb-0">
               <a href="account-wishlist.html" class="nav-tool">
                 <i class="cxi-heart nav-tool-icon"></i>
@@ -32,6 +28,7 @@
               </a>
             </li>
             <li class="divider-vertical mb-0 d-lg-none d-block"></li>
+            -->
             <li class="nav-item mb-0">
               <button class="navbar-toggler mt-n1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
@@ -39,73 +36,53 @@
             </li>
           </ul>
         </div>
+
+
         <!-- Navbar collapse -->
         <nav class="collapse navbar-collapse order-lg-2" id="navbarCollapse">
-          <!-- Search mobile -->
-          <div class="input-group-overlay form-group mb-0 d-lg-none d-block">
-            <input type="text" class="form-control prepended-form-control rounded-0 border-0" placeholder="Search for products...">
-            <div class="input-group-prepend-overlay">
-              <span class="input-group-text">
-                <i class="cxi-search font-size-lg align-middle mt-n1"></i>
-              </span>
-            </div>
-          </div>
+          
           <!-- Menu -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link active">Home</a>
+              <a routerLink="inicio" routerLinkActive="active" class="nav-link">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Shop</a>
+              <a href="#" class="nav-link dropdown-toggle hover" data-toggle="dropdown">Productos</a>
               <ul class="dropdown-menu">
-                <li><a href="shop-catalog.html" class="dropdown-item">Catalog with Filters</a></li>
-                <li><a href="shop-single.html" class="dropdown-item">Single Product</a></li>
-                <li><a href="checkout.html" class="dropdown-item">Checkout</a></li>
+                <li>
+                  <a routerLink="productos-ovinos" routerLinkActive="active"class="dropdown-item">Ovinos</a>
+                </li>
+                <hr class="hr-light">
+                <li>
+                  <a routerLink="productos-cerdos" routerLinkActive="active" class="dropdown-item">Cerdos</a>
+                </li>
+                <li>
+                  <a routerLink="productos-bovinos" routerLinkActive="active" class="dropdown-item">Bovinos</a>
+                </li>
+                <li>
+                  <a routerLink="productos-aves" routerLinkActive="active" class="dropdown-item">Aves</a>
+                </li>
               </ul>
             </li>
+          <!--
             <li class="nav-item dropdown mega-dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Megamenu</a>
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Productos</a>
               <div class="dropdown-menu">
                 <div class="container pt-lg-1 pb-lg-3">
                   <div class="row">
                     <div class="col-lg-2 col-md-3 py-2">
+                      <h4 class="font-size-sm text-uppercase pt-1 mb-2">Ovinos</h4>
                       <ul class="list-unstyled">
-                        <li><a href="#" class="dropdown-item">New collection</a></li>
-                        <li><a href="#" class="dropdown-item">Best sellers</a></li>
-                        <li><a href="#" class="dropdown-item">Plus size</a></li>
-                        <li><a href="#" class="dropdown-item text-danger">Sale up to 70%</a></li>
+                        <li><a href="#" class="dropdown-item">Engorda</a></li>
+                        <li><a href="#" class="dropdown-item">Pastoreo</a></li>
                       </ul>
                     </div>
                     <div class="col-lg-2 col-md-3 py-2">
-                      <h4 class="font-size-sm text-uppercase pt-1 mb-2">Clothes</h4>
+                      <h4 class="font-size-sm text-uppercase pt-1 mb-2">Cerdos</h4>
                       <ul class="list-unstyled">
-                        <li><a href="#" class="dropdown-item">Coats</a></li>
-                        <li><a href="#" class="dropdown-item">Jackets</a></li>
-                        <li><a href="#" class="dropdown-item">Suits</a></li>
-                        <li><a href="#" class="dropdown-item">Dresses</a></li>
-                        <li><a href="#" class="dropdown-item">Cardigans &amp; sweaters</a></li>
-                        <li><a href="#" class="dropdown-item">Sweatshirts &amp; hoodies</a></li>
-                        <li><a href="#" class="dropdown-item">T-shirts &amp; tops</a></li>
-                        <li><a href="#" class="dropdown-item">Pants</a></li>
-                        <li><a href="#" class="dropdown-item">Jeans</a></li>
-                        <li><a href="#" class="dropdown-item">Shorts</a></li>
-                        <li><a href="#" class="dropdown-item">Skirts</a></li>
-                        <li><a href="#" class="dropdown-item">Lingerie &amp; nightwear</a></li>
-                        <li><a href="#" class="dropdown-item">Sportswear</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-3 py-2">
-                      <h4 class="font-size-sm text-uppercase pt-1 mb-2">Shoes</h4>
-                      <ul class="list-unstyled">
-                        <li><a href="#" class="dropdown-item">Boots</a></li>
-                        <li><a href="#" class="dropdown-item">Flat shoes</a></li>
-                        <li><a href="#" class="dropdown-item">Heels</a></li>
-                        <li><a href="#" class="dropdown-item">Sandals</a></li>
-                        <li><a href="#" class="dropdown-item">Mules</a></li>
-                        <li><a href="#" class="dropdown-item">Sliders</a></li>
-                        <li><a href="#" class="dropdown-item">Slippers</a></li>
-                        <li><a href="#" class="dropdown-item">Sneakers</a></li>
-                        <li><a href="#" class="dropdown-item">Leather</a></li>
+                        <li><a href="#" class="dropdown-item">Inicio</a></li>
+                        <li><a href="#" class="dropdown-item">Crecimiento</a></li>
+                        <li><a href="#" class="dropdown-item">Engorda</a></li>
                       </ul>
                     </div>
                     <div class="col-lg-2 col-md-3 py-2">
@@ -139,8 +116,18 @@
                 </div>
               </div>
             </li>
+
+          -->
             <li class="nav-item">
-              <a href="index.html" class="nav-link">Noticias</a>
+              <a routerLink="noticias" routerLinkActive="active" class="nav-link">Noticias</a>
+            </li>
+
+            <li class="nav-item">
+              <a routerLink="contacto-nutras" routerLinkActive="active" class="nav-link">Distribuidores</a>
+            </li>
+
+            <li class="nav-item">
+              <a routerLink="nosotros" routerLinkActive="active" class="nav-link">Quienes somos</a>
             </li>
            
           </ul>
@@ -148,6 +135,7 @@
       </div>
     </div>
   </header>
+
 
 
 
