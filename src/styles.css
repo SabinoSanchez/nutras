@@ -7,4 +7,12 @@
     background-color: #F86C00;
 }
 
+.background-btn-naranja{
+    background-color: #F86C00;
+}
+
+.background-btn-naranja:hover{
+    background-color: #f07211;
+}
+
 .nav-link.active{color:#F86C00}
