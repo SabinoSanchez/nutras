@@ -17,6 +17,7 @@ import { CerdoComponent } from './cerdo/cerdo.component';
 import { AveComponent } from './ave/ave.component';
 import { ComponentsModule } from '../components/components.module';
 import { BlogComponent } from './blog/blog.component';
+import { EquiposHerramientasComponent } from './equipos-herramientas/equipos-herramientas.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BlogComponent } from './blog/blog.component';
     AboutComponent,
     CerdoComponent,
     AveComponent,
-    BlogComponent
+    BlogComponent,
+    EquiposHerramientasComponent
   ],
   exports:[
     InicioComponent,
@@ -38,7 +40,8 @@ import { BlogComponent } from './blog/blog.component';
     ContactComponent,
     AboutComponent,
     CerdoComponent,
-    AveComponent
+    AveComponent,
+    EquiposHerramientasComponent
   ],
   imports: [
     CommonModule,

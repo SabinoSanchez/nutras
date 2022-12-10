@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { CerdoComponent } from './cerdo/cerdo.component';
 import { AveComponent } from './ave/ave.component';
 import { BlogComponent } from './blog/blog.component';
+import { EquiposHerramientasComponent } from './equipos-herramientas/equipos-herramientas.component';
 
 const routes: Routes = [
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'productos-aves', component: AveComponent},
   {path:'contacto-nutras', component: ContactComponent},
   {path:'nosotros', component: AboutComponent},
+  {path:'herramientas-equipos', component: EquiposHerramientasComponent},
   {path:'noticias', component: BlogComponent},
 ];
 

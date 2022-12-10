@@ -4,6 +4,7 @@ import { ModalAvesComponent } from './modal-aves/modal-aves.component';
 import { ProductosMnaComponent } from './productos-mna/productos-mna.component';
 import { ProductosPopularesComponent } from './productos-populares/productos-populares.component';
 import { SliderHorizontalComponent } from './slider-horizontal/slider-horizontal.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -21,7 +22,8 @@ import { SliderHorizontalComponent } from './slider-horizontal/slider-horizontal
     SliderHorizontalComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class ComponentsModule { }
